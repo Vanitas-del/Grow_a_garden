@@ -156,7 +156,7 @@ if game.PlaceId == 70876832253163 or game.PlaceId == 98018823628597 then
     toggleMinimize()
 
     local success, err = pcall(function()
-        
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shade-vex/DeadRails/refs/heads/main/Viet-Nam-Number-One.txt"))(
     end)
 
     if not success then warn("[Vanitas Hub] Auto Bond script failed to load:", err) end
