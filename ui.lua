@@ -28,11 +28,11 @@ local bondToggle = FarmTab:AddToggle("AutoBondsINFToggle", {
 bondToggle:OnChanged(function(state)
     getgenv().AutoBondsINF_Enabled = state
     if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vanitas-del/gag/refs/heads/main/Main.lua?token=GHSAT0AAAAAADF2WOXG5KGGTO3HJK6SED7A2CXYYTQ"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vanitas-del/Grow_a_garden/refs/heads/main/AutoBond.lua"))()
     end
 end)
 
 -- Auto-run if toggle was previously ON
 if getgenv().AutoBondsINF_Enabled then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Vanitas-del/gag/refs/heads/main/Main.lua?token=GHSAT0AAAAAADF2WOXG5KGGTO3HJK6SED7A2CXYYTQ"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Vanitas-del/Grow_a_garden/refs/heads/main/AutoBond.lua"))()
 end
